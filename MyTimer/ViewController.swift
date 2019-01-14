@@ -31,6 +31,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var countDownLabel: UILabel!
  
     @IBAction func settingButtonAction(_ sender: Any) {
+        // timerをアンラップしてnowTimerに代入
+        if let nowTimer = timer {
+            // もしタイマーが、実行中だったら停止
+            if nowTimer.isValid == true {
+                // タイマー停止
+                nowTimer.invalidate()
+            }
+        }
+        
+        // 画面遷移を行う
+        performSegue(withIdentifier: "goSetting", sender: nil)
     }
     
     @IBAction func startButtonAction(_ sender: Any) {
