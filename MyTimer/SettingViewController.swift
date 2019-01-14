@@ -30,7 +30,7 @@ class SettingViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         let timerValue = settings.integer(forKey: settingKey)
         
         // Pickerの選択を合わせる
-        for now in 0..<settingArray.count {
+        for row in 0..<settingArray.count {
             if settingArray[row] == timerValue {
                 timerSettingPicker.selectRow(row, inComponent: 0, animated: true)
             }
