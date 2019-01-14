@@ -62,4 +62,9 @@ class SettingViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return settingArray.count
     }
+    
+    // UIPickerViewの表示する内容を設定
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return String(settingArray[row])
+    }
 }
