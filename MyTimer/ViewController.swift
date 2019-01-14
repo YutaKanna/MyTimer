@@ -39,5 +39,20 @@ class ViewController: UIViewController {
     
     @IBAction func stopButtonAction(_ sender: Any) {
     }
+    
+    // 画面の更新をする(戻り値:remainCount:残り時間)
+    func displayUpdate() -> Int {
+        
+        // UserDefaultsのインスタンスを生成
+        let settings = UserDefaults.standard
+        // 取得した秒数をtimerValueに渡す
+        let timerValue = settings.integer(forKey: settingKey)
+        // 残り時間(remainCount)を生成
+        let remainCount = timerValue - count
+        // remainCount(残りの時間)をラベルに表示
+        countDownLabel.text = "残り\(remainCount)秒"
+        // 残り時間を戻り値に設定
+        return remainCount
+    }
 }
 
