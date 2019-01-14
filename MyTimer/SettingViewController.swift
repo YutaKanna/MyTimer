@@ -20,6 +20,21 @@ class SettingViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // timerSettingPickerのデリゲートとデータソースの通知先を指定
+        timerSettingPicker.delegate = self
+        timerSettingPicker.dataSource = self
+        
+        // UserDefaultsの取得
+        let settings = UserDefaults.standard
+        let timerValue = settings.integer(forKey: settingKey)
+        
+        // Pickerの選択を合わせる
+        for now in 0..<settingArray.count {
+            if settingArray[row] == timerValue {
+                timerSettingPicker.selectRow(row, inComponent: 0, animated: true)
+            }
+        }
     }
     
 
