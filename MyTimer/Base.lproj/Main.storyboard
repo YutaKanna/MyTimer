@@ -34,10 +34,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGC-aG-14x">
                                 <rect key="frame" x="37.5" y="363.5" width="140" height="140"/>
                                 <state key="normal" image="btn_start"/>
+                                <connections>
+                                    <action selector="startButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jKq-fi-CuN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8g-4X-YnH">
                                 <rect key="frame" x="197.5" y="363.5" width="140" height="140"/>
                                 <state key="normal" image="btn_stop"/>
+                                <connections>
+                                    <action selector="stopButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ug-X7-1Gn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -56,9 +62,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="DF4-4r-40F">
-                        <barButtonItem key="rightBarButtonItem" title="秒数設定" id="F4t-eT-Uv4"/>
+                        <barButtonItem key="rightBarButtonItem" title="秒数設定" id="F4t-eT-Uv4">
+                            <connections>
+                                <action selector="settingButtonAction:" destination="BYZ-38-t0r" id="Pij-wb-LQQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="countDownLabel" destination="Uqn-Ug-cVp" id="pSE-Xc-uak"/>
                         <segue destination="odj-0k-4Fn" kind="show" identifier="goSetting" id="8VF-gO-0kw"/>
                     </connections>
                 </viewController>
