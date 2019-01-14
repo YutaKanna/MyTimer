@@ -20,6 +20,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //  UserDefaultsのインスタンスを生成
+        let settings = UserDefaults.standard
+        // UserDefaultsに初期値を登録
+        settings.register(defaults: [settingKey:10])
     }
 
 
