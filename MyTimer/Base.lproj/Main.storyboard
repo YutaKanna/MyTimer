@@ -45,7 +45,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="DF4-4r-40F">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="F4t-eT-Uv4"/>
+                        <barButtonItem key="rightBarButtonItem" title="秒数設定" id="F4t-eT-Uv4"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
