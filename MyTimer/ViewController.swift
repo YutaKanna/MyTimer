@@ -9,6 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // タイマーの変数を作成
+    var timer : Timer?
+    // カウント(経過時間)の変数を作成
+    var count = 0
+    // 設定値を扱うキーを設定
+    let settingKey = "timer_value"
 
     override func viewDidLoad() {
         super.viewDidLoad()
