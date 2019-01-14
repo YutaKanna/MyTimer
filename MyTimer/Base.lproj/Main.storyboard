@@ -18,9 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="qoz-kq-1Yc">
-                                <rect key="frame" x="0.0" y="64" width="375" height="597"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="qoz-kq-1Yc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="603" id="lW4-gy-aNM"/>
+                                    <constraint firstAttribute="width" constant="375" id="uF1-0w-B2y"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqn-Ug-cVp">
                                 <rect key="frame" x="152" y="215.5" width="71" height="36"/>
@@ -40,11 +43,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OGC-aG-14x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="35K-VX-jQw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qoz-kq-1Yc" secondAttribute="bottom" id="5j6-zi-8PJ"/>
                             <constraint firstItem="Uqn-Ug-cVp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="EkO-hm-oa3"/>
+                            <constraint firstItem="qoz-kq-1Yc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GSk-Bm-dO1"/>
+                            <constraint firstItem="qoz-kq-1Yc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NCm-le-0MC"/>
                             <constraint firstItem="Uqn-Ug-cVp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nj7-Oa-nke"/>
                             <constraint firstItem="X8g-4X-YnH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="a8n-EU-2bV"/>
                             <constraint firstItem="X8g-4X-YnH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="gxW-xz-rju"/>
                             <constraint firstItem="OGC-aG-14x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="kcv-cz-utV"/>
+                            <constraint firstItem="qoz-kq-1Yc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s0U-jA-2uR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
