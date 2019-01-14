@@ -58,6 +58,9 @@
                     <navigationItem key="navigationItem" id="DF4-4r-40F">
                         <barButtonItem key="rightBarButtonItem" title="秒数設定" id="F4t-eT-Uv4"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="odj-0k-4Fn" kind="show" identifier="goSetting" id="8VF-gO-0kw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
