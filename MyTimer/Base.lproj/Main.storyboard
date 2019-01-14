@@ -39,7 +39,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="DF4-4r-40F"/>
+                    <navigationItem key="navigationItem" id="DF4-4r-40F">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="F4t-eT-Uv4"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
